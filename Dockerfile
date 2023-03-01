@@ -1,7 +1,7 @@
 FROM archlinux:base-devel
 RUN pacman -Syyu --noconfirm
 RUN pacman -S --noconfirm \
-    python python-pip git curl ffmpeg mediainfo \
+    python3 python-pip python-setuptools git curl ffmpeg mediainfo \
     neofetch tmate speedtest-cli
 ARG USER=root
 USER $USER
