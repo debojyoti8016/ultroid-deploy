@@ -6,5 +6,5 @@ app = Flask(__name__)
 def hello_world():
    return 'Hello, World!'
 
-os.system("git clone https://github.com/TeamUltroid/Ultroid && cd Ultroid && bash installer.sh && cp ../.env .env && bash startup &")
+os.system("rm -rf Ultroid && git clone https://github.com/TeamUltroid/Ultroid && cd Ultroid && bash installer.sh && bash startup &")
 
